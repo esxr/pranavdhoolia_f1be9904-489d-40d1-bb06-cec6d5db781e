@@ -25,8 +25,8 @@ async function main() {
 
         await changeDate(
             '/Users/dhool/OneDrive/Documents/work/pranavdhoolia_f1be9904-489d-40d1-bb06-cec6d5db781e',
-            moment(1642073974).unix(),
-            moment(1642073974).unix()
+            "Thu Jan 01 05:57:22 2011 +0530",
+            "Thu Jan 01 05:57:22 2011 +0530"
         );
     })
 }
