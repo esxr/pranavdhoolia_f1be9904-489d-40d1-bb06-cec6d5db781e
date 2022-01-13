@@ -5,10 +5,10 @@ const path = require('path')
 
 async function main() {
     const commitHashes = await getCommits(
-        path.dirname(__filename)
+        '/Users/dhool/OneDrive/Documents/work/pranavdhoolia_f1be9904-489d-40d1-bb06-cec6d5db781e'
     )
 
-    // console.log(commitHashes);
+    console.log(commitHashes);
 
     const timestamp = 1357037621
     const difference = moment(commitHashes[0].date).diff(moment(timestamp), 'seconds')
@@ -24,7 +24,7 @@ async function main() {
         
 
         await changeDate(
-            path.dirname(__filename),
+            '/Users/dhool/OneDrive/Documents/work/pranavdhoolia_f1be9904-489d-40d1-bb06-cec6d5db781e',
             moment(1642073974).unix(),
             moment(1642073974).unix()
         );
