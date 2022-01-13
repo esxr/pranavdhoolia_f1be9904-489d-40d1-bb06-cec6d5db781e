@@ -5,7 +5,8 @@ const path = require('path')
 
 async function main() {
     const commitHashes = await getCommits(
-        '/Users/dhool/OneDrive/Documents/work/pranavdhoolia_f1be9904-489d-40d1-bb06-cec6d5db781e'
+        '/Users/dhool/OneDrive/Documents/work/pranavdhoolia_f1be9904-489d-40d1-bb06-cec6d5db781e',null, null,
+        branch='fourth',
     )
 
     // console.log(commitHashes);
@@ -25,6 +26,7 @@ async function main() {
 
         await changeDate(
             '/Users/dhool/OneDrive/Documents/work/pranavdhoolia_f1be9904-489d-40d1-bb06-cec6d5db781e',
+            item.hash,
             "Thu Jan 01 05:57:22 2011 +0530",
             "Thu Jan 01 05:57:22 2011 +0530"
         );

@@ -5,14 +5,16 @@ const execute = require('./execute');
 
 moment.suppressDeprecationWarnings = true;
 
-const getCommits = async (path, count=null, hash=null) => {
+const getCommits = async (path, count=null, hash=null, branch=null) => {
   let commitLog;
 
+  await execute(`cd ${path} && git checkout ${branch}`);
+
   if (hash) {
-    commitLog = await execute(`cd ${path} && git log -1 -U ${hash} --pretty`);
+    commitLog = await execute(`git log -1 -U ${hash} --pretty`);
   } else {
-    commitLog = (count) ? await execute(`cd ${path} && git log -n${count} --pretty`)
-      : await execute(`cd ${path} && git log --pretty`);
+    commitLog = (count) ? await execute(`git log -n${count} --pretty`)
+      : await execute(`git log --pretty`);
 
   }
   return gitLogConverter(commitLog);
