@@ -36,7 +36,7 @@ const changeDate = async (path, hash, authorDate, committerDate) => {
      then
          export GIT_AUTHOR_DATE="${authorDateFormatted}"
          export GIT_COMMITTER_DATE="${committerDateFormatted}"
-     fi'`);
+     fi; /bin/true'`);
   } catch (err) {
     return throwError(err);
   }

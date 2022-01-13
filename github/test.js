@@ -8,7 +8,7 @@ async function main() {
         '/Users/dhool/OneDrive/Documents/work/pranavdhoolia_f1be9904-489d-40d1-bb06-cec6d5db781e'
     )
 
-    console.log(commitHashes);
+    // console.log(commitHashes);
 
     const timestamp = 1357037621
     const difference = moment(commitHashes[0].date).diff(moment(timestamp), 'seconds')
@@ -17,7 +17,7 @@ async function main() {
         let originalDate= moment(item.date).unix()
         let newDate = moment(originalDate).add(difference, 'seconds').unix()
 
-        console.log(newDate)
+        // console.log(newDate)
         // const newDate = moment(item.date).unix() - difference
         // console.log(newDate)
         // let date = moment(moment(item.date).unix + difference).format()
