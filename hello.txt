@@ -1,0 +1,87 @@
+commit ff0a132a153d3e65501de5d43982b5d8dacd73f6
+Merge: 7f9e551 7ca1f27
+Author: pranavdhoolia <dhoolia.pranav@gmail.com>
+Date:   Mon Aug 20 12:45:30 2018 +0200
+
+    Merge branch 'master' of https://github.com/Azure-Samples/python-docs-hello-world into build-in
+
+commit 7f9e551e6eee7dd38bc97c95fe458ab6569c8d69
+Author: pranavdhoolia <dhoolia.pranav@gmail.com>
+Date:   Mon Aug 20 12:40:08 2018 +0200
+
+    built-in Linux image changes
+
+commit 7ca1f278560e7ee3aaf68ffbb5a6f1b80d8e43e9
+Merge: cccc207 0a067d4
+Author: pranavdhoolia <dhoolia.pranav@gmail.com>
+Date:   Fri Jul 20 19:28:56 2018 +0200
+
+    Merge pull request #12 from cephalin/master
+    
+    convert to container quickstart
+
+commit 0a067d48cc0560907af83e95a11b60158a7f8b36
+Author: pranavdhoolia <dhoolia.pranav@gmail.com>
+Date:   Fri Jul 13 17:00:15 2018 +0200
+
+    convert to container quickstart
+
+commit cccc20768701f1dceb85e337d2180b016b71ffd3
+Author: pranavdhoolia <dhoolia.pranav@gmail.com>
+Date:   Tue Dec 5 12:09:30 2017 +0100
+
+    Update web.3.4.config
+
+commit 575165e7f0e7418ccde56c9ee960ac296790bc2a
+Author: pranavdhoolia <dhoolia.pranav@gmail.com>
+Date:   Tue Dec 5 12:09:14 2017 +0100
+
+    Update web.2.7.config
+
+commit d7e95927022c2824518dce00516be2731a570ef4
+Merge: f7d127d e78f204
+Author: pranavdhoolia <dhoolia.pranav@gmail.com>
+Date:   Wed Nov 29 14:33:02 2017 -0800
+
+    Merge pull request #5 from berndverst/master
+    
+    Update IIS web config
+
+commit e78f204af2f89b686b69975e6f9c20ad6e7bba3b
+Author: pranavdhoolia <dhoolia.pranav@gmail.com>
+Date:   Wed Nov 29 14:00:04 2017 -0800
+
+    Update IIS web config
+
+commit f7d127d2b17695dab4f6bde45d7a45b7852f9a3b
+Merge: fd3d30c 40e9cd0
+Author: pranavdhoolia <dhoolia.pranav@gmail.com>
+Date:   Tue Apr 18 17:46:12 2017 -0700
+
+    Merge pull request #2 from berndverst/master
+    
+    Minimal Flask app
+
+commit 40e9cd019515fc6a965036c6971e76149479c670
+Author: pranavdhoolia <dhoolia.pranav@gmail.com>
+Date:   Tue Apr 18 14:59:46 2017 -0700
+
+    Basic Flask app.
+
+commit fd3d30ce6c99d2567e6d48c82fcfaccc98d38f83
+Author: pranavdhoolia <dhoolia.pranav@gmail.com>
+Date:   Fri Mar 31 16:00:16 2017 -0700
+
+    Initial commit
+
+commit eba25bc5403866359fbf381e4e69135ad9dd9ad8
+Author: pranavdhoolia <dhoolia.pranav@gmail.com>
+Date:   Fri Mar 31 16:00:15 2017 -0700
+
+    Initial commit
+
+commit 1900d08ec4ff2c45eee3c4592f087641c9f1cd80
+Author: pranavdhoolia <dhoolia.pranav@gmail.com>
+Date:   Fri Mar 31 16:00:10 2017 -0700
+
+    Initial commit

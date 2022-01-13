@@ -1,0 +1,12 @@
+{
+  "name": "pranavdhoolia_f1be9904-489d-40d1-bb06-cec6d5db781e",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pranavdhoolia/pranavdhoolia_f1be9904-489d-40d1-bb06-cec6d5db781e.git",
+  "author": "Pranav Dhoolia <dhoolia.pranav@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.29.1",
+    "path": "^0.12.7"
+  }
+}

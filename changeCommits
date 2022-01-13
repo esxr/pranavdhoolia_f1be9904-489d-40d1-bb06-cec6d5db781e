@@ -1,0 +1,45 @@
+#!/bin/bash
+export FILTER_BRANCH_SQUELCH_WARNING=1
+
+# checkout to master branch
+git checkout third
+
+commitsArray=($(git log --reverse --pretty=format:'%h' --abbrev=40))
+# echo ${commitsArray[@]}
+
+datesArray=($(git log --reverse --pretty=format:'%ct'))
+
+# echo "commitsArray: ${commitsArray[@]}"
+# echo "datesArray: ${datesArray[@]}"
+
+# get start timestamp
+start_timestamp=$1
+# difference between actual timestamp and start timestamp
+difference=$(($start_timestamp - ${datesArray[0]}))
+# echo $difference
+
+# GIT_COMMITTER_DATE=$(date -d @$1)
+# echo $GIT_COMMITTER_DATE
+
+export FILTER_BRANCH_SQUELCH_WARNING=1
+# echo ${commitsArray[1]}
+
+git filter-branch --env-filter '
+  if [["$GIT_COMMIT" = "${commitsArray[0]}" ]]
+  then
+    export GIT_AUTHOR_DATE="Mon Aug 12 13:03:00 2009"
+    export GIT_COMMITTER_DATE="Mon Aug 12 13:03:00 2009"
+  fi'
+
+# iterate through commitsArray
+# for ((i = 0; i < ${#commitsArray[@]}; i++)); do
+#     # get new timestamp
+#     new_timestamp=$((${datesArray[i]} + $difference))
+
+#     # date
+#     CUSTOM_DATE=$(date -d @$new_timestamp)
+
+# done
+
+# push changes
+git push -f
