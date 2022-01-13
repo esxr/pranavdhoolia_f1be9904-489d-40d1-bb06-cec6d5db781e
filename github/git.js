@@ -32,7 +32,7 @@ const changeDate = async (path, hash, authorDate, committerDate) => {
     const committerDateFormatted = formatGitDate(committerDate);
 
     return await execute(`cd ${path} && git filter-branch -f --env-filter \
-    'if [ $GIT_COMMIT = ${hash} ]
+    'if [[ $GIT_COMMIT = ${hash} ]]
      then
          export GIT_AUTHOR_DATE="${authorDateFormatted}"
          export GIT_COMMITTER_DATE="${committerDateFormatted}"
